@@ -1,0 +1,319 @@
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd UM
+bash: cd: UM: No such file or directory
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd UVM
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ touch file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add  f1.sh   f2.sh  f5.sh           gbit   rr    textt
+d1   f2f.sh  f4.sh  file_create.sh  notes  test  ubit
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ chmod +x file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ./file_create.sh
+enter the name
+vlsii
+enter number of files
+7
+./file_create.sh: line 7: syntax error near unexpected token `('
+./file_create.sh: line 7: `for i in (1..$number..1) do'
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ./file_create.sh
+enter the name
+vlsii
+enter number of files
+7
+./file_create.sh: line 8: syntax error near unexpected token `('
+./file_create.sh: line 8: `for i in (1..$number..1) do'
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ./file_create.sh
+enter the name
+vlsii
+enter number of files
+7
+./file_create.sh: line 12: syntax error near unexpected token `done'
+./file_create.sh: line 12: `done'
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ./file_create.sh
+enter the name
+vlsii
+enter number of files
+7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add    f2f.sh  f5.sh           notes  textt   vlsii2  vlsii5
+d1     f2.sh   file_create.sh  rr     ubit    vlsii3  vlsii6
+f1.sh  f4.sh   gbit            test   vlsii1  vlsii4  vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ touch user_create
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit user_create
+^C
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit file_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit user_create
+^C
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sudo useradd rajmachawal
+[sudo] password for ujjwal: 
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ w
+ 10:48:49 up 38 min,  1 user,  load average: 0.82, 0.25, 0.20
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+ujjwal   :0       :0               10:10   ?xdm?   4:16   0.00s /usr/lib/gdm3/g
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ who
+ujjwal   :0           2020-02-16 10:10 (:0)
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ whoami
+ujjwal
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ who am i
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ su -rajmachawal
+su: invalid option -- 'r'
+Try 'su --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ su rajmachawal
+Password: 
+su: Authentication failure
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ 
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sudo passwd rajmachawal
+New password: 
+Retype new password: 
+passwd: password updated successfully
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ su rajmachawal
+Password: 
+$ bash
+rajmachawal@ujjwal-Strix-15-GL503GE:/home/ujjwal/UVM$ exit
+exit
+$ su ujjwal
+Password: 
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ history
+    1  ls-l
+    2  ls -l
+    3  chmod +t f3.sh
+    4  ls -l
+    5  rm -rf f3.sh
+    6  ls -l
+    7  chmod 776 f2.sh
+    8  chmod +t f2.sh
+    9  ls -l
+   10  chmod +x f2.sh
+   11  ls -l
+   12  chmod -t f2.sh
+   13  ls -l
+   14  find UVM -perm
+   15  find ./UVM -perm
+   16  cat > notes
+   17  cd notes
+   18  file UVM -perm 777
+   19  file ./UVM -perm 777
+   20  get enforce
+   21  getenforce
+   22  sestatus
+   23  sestatus -b
+   24  echo 0> /selinux/enforce
+   25  touch textt
+   26  ls -l
+   27  mkdir test
+   28  ls -l
+   29  umask
+   30  umask -s
+   31  umask -S
+   32  mkdir d1
+   33  ls -l
+   34  cd d1
+   35  cd ..
+   36  chmod 776 d1
+   37  ls -l
+   38  cd d1
+   39  cd ..
+   40  chmod 677  d1
+   41  cd d1
+   42  cd
+   43  cd UVM
+   44  gedit notes
+   45  umask a-x
+   46  mkdir add
+   47  ls -l
+   48  unmask a-r
+   49  umask a-r
+   50  touch rr
+   51  ls -l
+   52  umask 0022
+   53  touch gbit
+   54  ls -l
+   55  chmod g+S gbit
+   56  chmod g+s gbit
+   57  ls -l
+   58  groupadd ecep1
+   59  sudo groupadd ecep1
+   60  cd..
+   61  cd ~
+   62  ls
+   63  ls 
+   64  cd ~
+   65  ls
+   66  ls /home
+   67  cd UV
+   68  cd UVM
+   69  ls
+   70  touch ubit
+   71  chmod u+s ubit
+   72  ls -l
+   73  sudo find / -perm 4000
+   74  chmod u-s ubit
+   75  ls -l
+   76  cat /etc/passwd | greep ujjwal
+   77  cat /etc/passwd | grep ujjwal
+   78  id ujjwal
+   79  id
+   80  id -u ujjwal
+   81  id -g ujjwal
+   82  id -G ujjwal
+   83  id -ng ujjwal
+   84  id -r ujjwal
+   85  sudo id -r ujjwal
+   86  vmstat
+   87  vmstat -a
+   88  vmstat -m
+   89  vmstat -d
+   90  vmstat -t  3 5
+   91  vmstat -d  3 5
+   92  vmstat -S M 3 5
+   93  init 0
+   94  mkdir UVM
+   95  cd UVM
+   96  touch f2f.sh
+   97  gedit f2f.sh
+   98  touch f1.sh f2.sh f3.sh f4.sh f5.sh
+   99  $SHVL
+  100  gedit f1.sh
+  101  getit f2.sh
+  102  gedit f2.sh
+  103  gedit f3.sh
+  104  gedit f4.sh
+  105  gedit f5.sh
+  106  chmod +x f1.sh
+  107  chmod +x f2.sh
+  108  chmod +x f3.sh
+  109  chmod +x f4.sh
+  110  chmod +x f5.sh
+  111  ./f1.sh
+  112  gedit f1.sh
+  113  gedit f2.sh
+  114  gedit f3.sh
+  115  gedit f4.sh
+  116  edit f5.sh
+  117  gedit f5.sh
+  118  ./f1.sh
+  119  gedit f5.sh
+  120  ./f1.sh
+  121  gedit f5.sh
+  122  echo $0
+  123  echo $?
+  124  csh
+  125  sh
+  126  cd UVM
+  127  ls
+  128  ls -l
+  129  ls
+  130  cat>notes
+  131  cat > notes
+  132  ./notes
+  133  notes
+  134  gedit notes
+  135  history
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit user_create.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit user_create
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ chmod +x user_create
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ./user_create
+enter the name
+chai
+enter number of users
+3
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:106:113::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:107:114::/nonexistent:/usr/sbin/nologin
+avahi-autoipd:x:108:115:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:109:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:110:116:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:111:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+cups-pk-helper:x:112:119:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:113:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+kernoops:x:114:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+avahi:x:115:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+saned:x:116:122::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:117:123:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+whoopsie:x:118:124::/nonexistent:/bin/false
+colord:x:119:125:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:120:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:121:126::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:122:127:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+gnome-initial-setup:x:123:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:124:129:Gnome Display Manager:/var/lib/gdm3:/bin/false
+ujjwal:x:1000:1000:Ujjwal Aggarwal,,,:/home/ujjwal:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+rajmachawal:x:1001:1002::/home/rajmachawal:/bin/sh
+chai1:x:1002:1003::/home/chai1:/bin/sh
+chai2:x:1003:1004::/home/chai2:/bin/sh
+chai3:x:1004:1005::/home/chai3:/bin/sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit user_create
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ touch lower_read.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit lower_read.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test 5 -eq 1 && echo "yes" \\ echo "no"
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test 5 -eq 1 && echo "yes" || echo "no"
+no
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit lower_read.sh
+^C
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test chai = coffee
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+1
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test chai = chai
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+0
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit lower_read.sh
+^C
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add     f2.sh           gbit           test         vlsii1  vlsii5
+d1      f4.sh           lower_read.sh  textt        vlsii2  vlsii6
+f1.sh   f5.sh           notes          ubit         vlsii3  vlsii7
+f2f.sh  file_create.sh  rr             user_create  vlsii4
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test vlsii1 -nt vlsii6
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo$?
+
+Command 'echo1' not found, did you mean:
+
+  command 'echo' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+127
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test vlsii1 -nt f2.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+0
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd/
+bash: cd/: No such file or directory
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+127
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test -d vlsii1
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+1
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ test -d d1
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo $?
+0
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ 
+
