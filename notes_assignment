@@ -1,0 +1,487 @@
+ujjwal@ujjwal-Strix-15-GL503GE:~$ pwd
+/home/ujjwal
+ujjwal@ujjwal-Strix-15-GL503GE:~$ echo $0
+bash
+ujjwal@ujjwal-Strix-15-GL503GE:~$ ls
+Desktop    Downloads  password_create.sh  Public     UVM
+Documents  Music      Pictures            Templates  Videos
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd uvm
+bash: cd: uvm: No such file or directory
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd UVM
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add                 f2.sh           lower_read.sh  notes   textt        vlsii3
+assignment1_ujjwal  f4.sh           m1.txt         notes2  ubit         vlsii4
+d1                  f5.sh           m2.txt         qes     user_create  vlsii5
+f1.sh               file_create.sh  m3.txt         rr      vlsii1       vlsii6
+f2f.sh              gbit            me.txt         test    vlsii2       vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd add
+bash: cd: add: Permission denied
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd test
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/test$ cd ..
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd ~
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd -
+/home/ujjwal/UVM
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd /
+ujjwal@ujjwal-Strix-15-GL503GE:/$ cd UVM
+bash: cd: UVM: No such file or directory
+ujjwal@ujjwal-Strix-15-GL503GE:/$ cd /
+ujjwal@ujjwal-Strix-15-GL503GE:/$ cd UVM
+bash: cd: UVM: No such file or directory
+ujjwal@ujjwal-Strix-15-GL503GE:/$ cd ~
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd UVM
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -a
+.                   f1.sh   file_create.sh  m3.txt  rr           vlsii1  vlsii6
+..                  f2f.sh  gbit            me.txt  test         vlsii2  vlsii7
+add                 f2.sh   lower_read.sh   notes   textt        vlsii3
+assignment1_ujjwal  f4.sh   m1.txt          notes2  ubit         vlsii4
+d1                  f5.sh   m2.txt          qes     user_create  vlsii5
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -l
+total 84
+drw-r--r-- 2 ujjwal ujjwal  4096 Feb 15 17:25 add
+-rw-r--r-- 1 ujjwal ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 ujjwal ujjwal  4096 Feb 15 17:03 d1
+-rwxr-xr-x 1 ujjwal ujjwal    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 ujjwal ujjwal    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal ujjwal    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 ujjwal ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal ujjwal   166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 ujjwal ujjwal     0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 ujjwal ujjwal   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal ujjwal    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal ujjwal    12 Feb 22 21:02 qes
+--w------- 1 ujjwal ujjwal     0 Feb 15 17:27 rr
+drwxr-xr-x 2 ujjwal ujjwal  4096 Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 16:42 textt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 ujjwal ujjwal   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal ujjwal   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -ln
+total 84
+drw-r--r-- 2 1000 1000  4096 Feb 15 17:25 add
+-rw-r--r-- 1 1000 1000 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 1000 1000  4096 Feb 15 17:03 d1
+-rwxr-xr-x 1 1000 1000    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 1000 1000     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 1000 1000    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 1000 1000    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 1000 1000    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 1000 1000   166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 1000 1000     0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 1000 1000   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 1000 1000    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 1000 1000  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 1000 1000  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 1000 1000    12 Feb 22 21:02 qes
+--w------- 1 1000 1000     0 Feb 15 17:27 rr
+drwxr-xr-x 2 1000 1000  4096 Feb 15 16:43 test
+-rw-r--r-- 1 1000 1000     0 Feb 15 16:42 textt
+-rw-r--r-- 1 1000 1000     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 1000 1000   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 1000 1000   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lns
+total 84
+ 4 drw-r--r-- 2 1000 1000  4096 Feb 15 17:25 add
+16 -rw-r--r-- 1 1000 1000 15804 Feb 21 20:00 assignment1_ujjwal
+ 4 drw-rwxrwx 2 1000 1000  4096 Feb 15 17:03 d1
+ 4 -rwxr-xr-x 1 1000 1000    51 Feb 15 16:03 f1.sh
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 15 15:45 f2f.sh
+ 4 -rwxrwxrwx 1 1000 1000    51 Feb 15 16:03 f2.sh
+ 4 -rwxr-xr-x 1 1000 1000    42 Feb 15 16:03 f4.sh
+ 4 -rwxr-xr-x 1 1000 1000    46 Feb 15 16:10 f5.sh
+ 4 -rwxr-xr-x 1 1000 1000   166 Feb 16 10:40 file_create.sh
+ 0 -rw-r-Sr-- 1 1000 1000     0 Feb 15 17:36 gbit
+ 4 -rw-rw-r-- 1 1000 1000   103 Feb 16 11:35 lower_read.sh
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m1.txt
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m2.txt
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m3.txt
+ 4 -rw-r--r-- 1 1000 1000    11 Feb 21 19:53 me.txt
+ 8 -rw-r--r-- 1 1000 1000  5872 Feb 17 00:03 notes
+ 8 -rw-r--r-- 1 1000 1000  5871 Feb 17 00:04 notes2
+ 4 -rw-r--r-- 1 1000 1000    12 Feb 22 21:02 qes
+ 0 --w------- 1 1000 1000     0 Feb 15 17:27 rr
+ 4 drwxr-xr-x 2 1000 1000  4096 Feb 15 16:43 test
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 15 16:42 textt
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 15 18:06 ubit
+ 4 -rwxr-xr-x 1 1000 1000   173 Feb 16 10:47 user_create
+ 4 -rw-r--r-- 1 1000 1000   181 Feb 16 11:54 vlsii1
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii2
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii3
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii4
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii5
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii6
+ 0 -rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lhs
+total 84K
+4.0K drw-r--r-- 2 ujjwal ujjwal 4.0K Feb 15 17:25 add
+ 16K -rw-r--r-- 1 ujjwal ujjwal  16K Feb 21 20:00 assignment1_ujjwal
+4.0K drw-rwxrwx 2 ujjwal ujjwal 4.0K Feb 15 17:03 d1
+4.0K -rwxr-xr-x 1 ujjwal ujjwal   51 Feb 15 16:03 f1.sh
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 15:45 f2f.sh
+4.0K -rwxrwxrwx 1 ujjwal ujjwal   51 Feb 15 16:03 f2.sh
+4.0K -rwxr-xr-x 1 ujjwal ujjwal   42 Feb 15 16:03 f4.sh
+4.0K -rwxr-xr-x 1 ujjwal ujjwal   46 Feb 15 16:10 f5.sh
+4.0K -rwxr-xr-x 1 ujjwal ujjwal  166 Feb 16 10:40 file_create.sh
+   0 -rw-r-Sr-- 1 ujjwal ujjwal    0 Feb 15 17:36 gbit
+4.0K -rw-rw-r-- 1 ujjwal ujjwal  103 Feb 16 11:35 lower_read.sh
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m1.txt
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m2.txt
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m3.txt
+4.0K -rw-r--r-- 1 ujjwal ujjwal   11 Feb 21 19:53 me.txt
+8.0K -rw-r--r-- 1 ujjwal ujjwal 5.8K Feb 17 00:03 notes
+8.0K -rw-r--r-- 1 ujjwal ujjwal 5.8K Feb 17 00:04 notes2
+4.0K -rw-r--r-- 1 ujjwal ujjwal   12 Feb 22 21:02 qes
+   0 --w------- 1 ujjwal ujjwal    0 Feb 15 17:27 rr
+4.0K drwxr-xr-x 2 ujjwal ujjwal 4.0K Feb 15 16:43 test
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 16:42 textt
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 18:06 ubit
+4.0K -rwxr-xr-x 1 ujjwal ujjwal  173 Feb 16 10:47 user_create
+4.0K -rw-r--r-- 1 ujjwal ujjwal  181 Feb 16 11:54 vlsii1
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii2
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii3
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii4
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii5
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii6
+   0 -rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lh
+total 84K
+drw-r--r-- 2 ujjwal ujjwal 4.0K Feb 15 17:25 add
+-rw-r--r-- 1 ujjwal ujjwal  16K Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 ujjwal ujjwal 4.0K Feb 15 17:03 d1
+-rwxr-xr-x 1 ujjwal ujjwal   51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 ujjwal ujjwal   51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal ujjwal   42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 ujjwal ujjwal   46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal ujjwal  166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 ujjwal ujjwal    0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 ujjwal ujjwal  103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal ujjwal   11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal ujjwal 5.8K Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal ujjwal 5.8K Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal ujjwal   12 Feb 22 21:02 qes
+--w------- 1 ujjwal ujjwal    0 Feb 15 17:27 rr
+drwxr-xr-x 2 ujjwal ujjwal 4.0K Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 16:42 textt
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 ujjwal ujjwal  173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal ujjwal  181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal ujjwal    0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -d */
+add/  d1/  test/
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -n
+total 84
+drw-r--r-- 2 1000 1000  4096 Feb 15 17:25 add
+-rw-r--r-- 1 1000 1000 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 1000 1000  4096 Feb 15 17:03 d1
+-rwxr-xr-x 1 1000 1000    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 1000 1000     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 1000 1000    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 1000 1000    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 1000 1000    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 1000 1000   166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 1000 1000     0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 1000 1000   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 1000 1000     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 1000 1000    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 1000 1000  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 1000 1000  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 1000 1000    12 Feb 22 21:02 qes
+--w------- 1 1000 1000     0 Feb 15 17:27 rr
+drwxr-xr-x 2 1000 1000  4096 Feb 15 16:43 test
+-rw-r--r-- 1 1000 1000     0 Feb 15 16:42 textt
+-rw-r--r-- 1 1000 1000     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 1000 1000   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 1000 1000   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 1000 1000     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -p
+add/                f2.sh           lower_read.sh  notes   textt        vlsii3
+assignment1_ujjwal  f4.sh           m1.txt         notes2  ubit         vlsii4
+d1/                 f5.sh           m2.txt         qes     user_create  vlsii5
+f1.sh               file_create.sh  m3.txt         rr      vlsii1       vlsii6
+f2f.sh              gbit            me.txt         test/   vlsii2       vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -r
+vlsii7  vlsii2       test    me.txt         gbit            f2f.sh
+vlsii6  vlsii1       rr      m3.txt         file_create.sh  f1.sh
+vlsii5  user_create  qes     m2.txt         f5.sh           d1
+vlsii4  ubit         notes2  m1.txt         f4.sh           assignment1_ujjwal
+vlsii3  textt        notes   lower_read.sh  f2.sh           add
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -R
+.:
+add                 f2.sh           lower_read.sh  notes   textt        vlsii3
+assignment1_ujjwal  f4.sh           m1.txt         notes2  ubit         vlsii4
+d1                  f5.sh           m2.txt         qes     user_create  vlsii5
+f1.sh               file_create.sh  m3.txt         rr      vlsii1       vlsii6
+f2f.sh              gbit            me.txt         test    vlsii2       vlsii7
+
+./add:
+
+./d1:
+
+./test:
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lX
+total 84
+drw-r--r-- 2 ujjwal ujjwal  4096 Feb 15 17:25 add
+-rw-r--r-- 1 ujjwal ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 ujjwal ujjwal  4096 Feb 15 17:03 d1
+-rw-r-Sr-- 1 ujjwal ujjwal     0 Feb 15 17:36 gbit
+-rw-r--r-- 1 ujjwal ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal ujjwal    12 Feb 22 21:02 qes
+--w------- 1 ujjwal ujjwal     0 Feb 15 17:27 rr
+drwxr-xr-x 2 ujjwal ujjwal  4096 Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 16:42 textt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 ujjwal ujjwal   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal ujjwal   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii7
+-rwxr-xr-x 1 ujjwal ujjwal    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 ujjwal ujjwal    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal ujjwal    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 ujjwal ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal ujjwal   166 Feb 16 10:40 file_create.sh
+-rw-rw-r-- 1 ujjwal ujjwal   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal ujjwal    11 Feb 21 19:53 me.txt
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lt
+total 84
+-rw-r--r-- 1 ujjwal ujjwal    12 Feb 22 21:02 qes
+-rw-r--r-- 1 ujjwal ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal ujjwal    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal ujjwal   181 Feb 16 11:54 vlsii1
+-rw-rw-r-- 1 ujjwal ujjwal   103 Feb 16 11:35 lower_read.sh
+-rwxr-xr-x 1 ujjwal ujjwal   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii7
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 16 10:40 vlsii2
+-rwxr-xr-x 1 ujjwal ujjwal   166 Feb 16 10:40 file_create.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 18:06 ubit
+-rw-r-Sr-- 1 ujjwal ujjwal     0 Feb 15 17:36 gbit
+--w------- 1 ujjwal ujjwal     0 Feb 15 17:27 rr
+drw-r--r-- 2 ujjwal ujjwal  4096 Feb 15 17:25 add
+drw-rwxrwx 2 ujjwal ujjwal  4096 Feb 15 17:03 d1
+drwxr-xr-x 2 ujjwal ujjwal  4096 Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 16:42 textt
+-rwxr-xr-x 1 ujjwal ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal ujjwal    42 Feb 15 16:03 f4.sh
+-rwxrwxrwx 1 ujjwal ujjwal    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal ujjwal    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal ujjwal     0 Feb 15 15:45 f2f.sh
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls ~
+Desktop    Downloads  password_create.sh  Public     UVM
+Documents  Music      Pictures            Templates  Videos
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls ../
+Desktop    Downloads  password_create.sh  Public     UVM
+Documents  Music      Pictures            Templates  Videos
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls ..
+Desktop    Downloads  password_create.sh  Public     UVM
+Documents  Music      Pictures            Templates  Videos
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -g
+total 84
+drw-r--r-- 2 ujjwal  4096 Feb 15 17:25 add
+-rw-r--r-- 1 ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 ujjwal  4096 Feb 15 17:03 d1
+-rwxr-xr-x 1 ujjwal    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 ujjwal    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal   166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 ujjwal     0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 ujjwal   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal    12 Feb 22 21:02 qes
+--w------- 1 ujjwal     0 Feb 15 17:27 rr
+drwxr-xr-x 2 ujjwal  4096 Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal     0 Feb 15 16:42 textt
+-rw-r--r-- 1 ujjwal     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 ujjwal   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -lG
+total 84
+drw-r--r-- 2 ujjwal  4096 Feb 15 17:25 add
+-rw-r--r-- 1 ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+drw-rwxrwx 2 ujjwal  4096 Feb 15 17:03 d1
+-rwxr-xr-x 1 ujjwal    51 Feb 15 16:03 f1.sh
+-rw-r--r-- 1 ujjwal     0 Feb 15 15:45 f2f.sh
+-rwxrwxrwx 1 ujjwal    51 Feb 15 16:03 f2.sh
+-rwxr-xr-x 1 ujjwal    42 Feb 15 16:03 f4.sh
+-rwxr-xr-x 1 ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal   166 Feb 16 10:40 file_create.sh
+-rw-r-Sr-- 1 ujjwal     0 Feb 15 17:36 gbit
+-rw-rw-r-- 1 ujjwal   103 Feb 16 11:35 lower_read.sh
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m1.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal    12 Feb 22 21:02 qes
+--w------- 1 ujjwal     0 Feb 15 17:27 rr
+drwxr-xr-x 2 ujjwal  4096 Feb 15 16:43 test
+-rw-r--r-- 1 ujjwal     0 Feb 15 16:42 textt
+-rw-r--r-- 1 ujjwal     0 Feb 15 18:06 ubit
+-rwxr-xr-x 1 ujjwal   173 Feb 16 10:47 user_create
+-rw-r--r-- 1 ujjwal   181 Feb 16 11:54 vlsii1
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls -color
+total 84
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii7
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii6
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii5
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii4
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii3
+-rw-r--r-- 1 ujjwal     0 Feb 16 10:40 vlsii2
+-rw-r--r-- 1 ujjwal   181 Feb 16 11:54 vlsii1
+-rwxr-xr-x 1 ujjwal   173 Feb 16 10:56 user_create
+-rw-r--r-- 1 ujjwal     0 Feb 15 18:10 ubit
+-rw-r--r-- 1 ujjwal     0 Feb 15 16:42 textt
+drwxr-xr-x 2 ujjwal  4096 Feb 15 16:43 test
+--w------- 1 ujjwal     0 Feb 15 17:27 rr
+-rw-r--r-- 1 ujjwal    12 Feb 22 21:02 qes
+-rw-r--r-- 1 ujjwal  5871 Feb 17 00:04 notes2
+-rw-r--r-- 1 ujjwal  5872 Feb 17 00:03 notes
+-rw-r--r-- 1 ujjwal    11 Feb 21 19:53 me.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m3.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m2.txt
+-rw-r--r-- 1 ujjwal     0 Feb 21 19:56 m1.txt
+-rw-rw-r-- 1 ujjwal   103 Feb 16 11:35 lower_read.sh
+-rw-r-Sr-- 1 ujjwal     0 Feb 15 17:36 gbit
+-rwxr-xr-x 1 ujjwal   166 Feb 16 10:40 file_create.sh
+-rwxr-xr-x 1 ujjwal    46 Feb 15 16:10 f5.sh
+-rwxr-xr-x 1 ujjwal    42 Feb 15 16:03 f4.sh
+-rwxrwxrwx 1 ujjwal    51 Feb 15 16:29 f2.sh
+-rw-r--r-- 1 ujjwal     0 Feb 15 15:45 f2f.sh
+-rwxr-xr-x 1 ujjwal    51 Feb 15 16:03 f1.sh
+drw-rwxrwx 2 ujjwal  4096 Feb 15 17:04 d1
+-rw-r--r-- 1 ujjwal 15804 Feb 21 20:00 assignment1_ujjwal
+drw-r--r-- 2 ujjwal  4096 Feb 15 17:25 add
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ mkdir -p d5/d6/d7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add                 f2.sh           m1.txt  qes          vlsii1  vlsii7
+assignment1_ujjwal  f4.sh           m2.txt  rr           vlsii2
+d1                  f5.sh           m3.txt  test         vlsii3
+d5                  file_create.sh  me.txt  textt        vlsii4
+f1.sh               gbit            notes   ubit         vlsii5
+f2f.sh              lower_read.sh   notes2  user_create  vlsii6
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls d5
+d6
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cd d5/d6
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5/d6$ ls
+d7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5/d6$ rmdir d7
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5/d6$ ls
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5/d6$ file d5
+d5: cannot open `d5' (No such file or directory)
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5/d6$ cd ..
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM/d5$ cd ..
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ file d5
+d5: directory
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ file *
+add:                directory
+assignment1_ujjwal: ASCII text
+d1:                 directory
+d5:                 directory
+f1.sh:              ASCII text
+f2f.sh:             empty
+f2.sh:              ASCII text
+f4.sh:              ASCII text
+f5.sh:              ASCII text
+file_create.sh:     ASCII text
+gbit:               setgid, empty
+lower_read.sh:      ASCII text
+m1.txt:             empty
+m2.txt:             empty
+m3.txt:             empty
+me.txt:             ASCII text
+notes:              ASCII text, with very long lines
+notes2:             ASCII text, with very long lines
+qes:                ASCII text, with no line terminators
+rr:                 empty
+test:               directory
+textt:              empty
+ubit:               empty
+user_create:        ASCII text
+vlsii1:             bsdiff(1) patch file
+vlsii2:             empty
+vlsii3:             empty
+vlsii4:             empty
+vlsii5:             empty
+vlsii6:             empty
+vlsii7:             empty
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ touch f1 f2 f3
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ ls
+add                 f1.sh   f4.sh           m1.txt  notes2  ubit         vlsii4
+assignment1_ujjwal  f2      f5.sh           m2.txt  qes     user_create  vlsii5
+d1                  f2f.sh  file_create.sh  m3.txt  rr      vlsii1       vlsii6
+d5                  f2.sh   gbit            me.txt  test    vlsii2       vlsii7
+f1                  f3      lower_read.sh   notes   textt   vlsii3
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit f1
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ 
