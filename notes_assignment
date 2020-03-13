@@ -485,3 +485,128 @@ d5                  f2.sh   gbit            me.txt  test    vlsii2       vlsii7
 f1                  f3      lower_read.sh   notes   textt   vlsii3
 ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ gedit f1
 ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ 
+
+ujjwal@ujjwal-Strix-15-GL503GE:~$ $ shlv
+$: command not found
+ujjwal@ujjwal-Strix-15-GL503GE:~$ $SHLV
+ujjwal@ujjwal-Strix-15-GL503GE:~$ echo $SHLV
+
+ujjwal@ujjwal-Strix-15-GL503GE:~$ echo $SHLVL
+1
+ujjwal@ujjwal-Strix-15-GL503GE:~$ echo $SHLV | cat >> notes
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cat notes
+
+ujjwal@ujjwal-Strix-15-GL503GE:~$ echo $SHLVL | cat >> notes
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cat notes
+
+1
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cut -d- -f weeks
+cut: invalid field value ‘weeks’
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~$ cd UVM
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cut -d- -f weeks
+cut: invalid field value ‘weeks’
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cut -d- -fl weeks
+cut: invalid field value ‘l’
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cut -d- -f1 weeks
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman"
+hii , i , am , ironman
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman" | cut -d',' -f1 
+hii 
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman" | cut -d',' -f2 
+ i 
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman" | cut -d',' -f 
+cut: option requires an argument -- 'f'
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman" | cut -d',' -f*
+cut: invalid field value ‘*’
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ echo "hii , i , am , ironman" | cut -d',' 
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks | grep sunday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks | grep -v sunday
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sed 's/friday/fri' weeks 
+sed: -e expression #1, char 12: unterminated `s' command
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sed 's/friday/fri/' weeks 
+monday
+tuesday
+wednesday
+thursday
+fri
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sed 's/friday/friday/' weeks 
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ tr 'uda' 'UDA' weeks
+tr: extra operand ‘weeks’
+Try 'tr --help' for more information.
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks | tr 'uda' 'UDA'
+monDAy
+tUesDAy
+weDnesDAy
+thUrsDAy
+friDAy
+sAtUrDAy
+sUnDAy
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks | tr 'uda' 'uda'
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ sort weeks
+friday
+monday
+saturday
+sunday
+thursday
+tuesday
+wednesday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ cat weeks
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ wc weeks
+ 7  7 57 weeks
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ find weeks
+weeks
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ vi vieditor
+ujjwal@ujjwal-Strix-15-GL503GE:~/UVM$ 
+
